@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Theatre Workshop 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            yellow: '#FFEC00', /* Stronger Yellow */
+                            purple: '#8A2BE2', /* Electric Purple */
+                            orange: '#FF5722', /* Deep Orange */
+                            teal: '#00E5FF',   /* Cyan */
+                            red: '#FF0055',    /* Pop Red */
+                            blue: '#2979FF',   /* Bright Blue */
+                            dark: '#1A1A2E'
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Fredoka', 'sans-serif'],
+                        body: ['Quicksand', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'pattern': "url(\"data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.1' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E\")",
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, h4, .fun-font {
+            font-family: 'Fredoka', sans-serif;
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+        }
+        .box-shadow-pop {
+            box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.1);
+            transition: all 0.2s ease;
+        }
+        .box-shadow-pop:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 7px 7px 0px 0px rgba(0,0,0,0.15);
+        }
+        .card-pop {
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .card-pop:hover {
+            transform: scale(1.03) rotate(1deg);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #FF5722;
+            border-radius: 6px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #E64A19;
+        }
+    </style>
+</head>
+<body class="bg-brand-yellow/10 bg-pattern text-gray-800 relative overflow-x-hidden selection:bg-brand-purple selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b-4 border-brand-yellow shadow-sm">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="bg-brand-red text-white p-2 rounded-lg transform -rotate-3">
+                    <i class="fa-solid fa-masks-theater text-2xl"></i>
+                </div>
+                <span class="fun-font text-2xl font-bold text-brand-dark tracking-wide">Kids<span class="text-brand-blue">Theatre</span></span>
+            </div>
+            <div class="hidden md:flex space-x-6 text-base font-bold text-gray-600">
+                <a href="#about" class="hover:text-brand-red transition">About</a>
+                <a href="#curriculum" class="hover:text-brand-blue transition">Activities</a>
+                <a href="#venue" class="hover:text-brand-orange transition">Location</a>
+            </div>
+            <a href="https://wa.me/919079805083?text=Hi, I am interested in the Kids Theatre Workshop!" target="_blank" class="bg-brand-purple hover:bg-brand-dark text-white px-6 py-2 rounded-full font-bold transition shadow-lg transform hover:scale-105 border-2 border-transparent hover:border-white flex items-center gap-2">
+                <i class="fa-brands fa-whatsapp text-lg"></i> Register
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-12 pb-20 overflow-hidden">
+        <!-- Floating shapes -->
+        <div class="absolute top-20 right-10 text-brand-teal opacity-20 text-9xl animate-pulse"><i class="fa-solid fa-star"></i></div>
+        <div class="absolute bottom-10 left-10 text-brand-red opacity-20 text-8xl animate-bounce"><i class="fa-solid fa-heart"></i></div>
+        
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
+            <div class="md:w-1/2 z-10 text-center md:text-left">
+                <div class="inline-block bg-brand-blue text-white px-4 py-2 rounded-full font-bold mb-6 border-b-4 border-blue-800 transform rotate-1">
+                    🎭 Jan 2nd – 4th, 2026
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold leading-tight text-brand-dark mb-6 text-shadow">
+                    Big Stages for <br><span class="text-brand-red">Little Stars!</span>
+                </h1>
+                <p class="text-xl text-gray-700 mb-8 font-medium leading-relaxed max-w-lg mx-auto md:mx-0 bg-white/50 p-4 rounded-2xl backdrop-blur-sm">
+                    Three days of laughter, learning, and lights! Join our super fun theatre workshop to boost confidence and creativity.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="https://wa.me/919079805083?text=Hi, I want to book a spot for the Kids Theatre Workshop." target="_blank" class="bg-brand-orange hover:bg-orange-600 text-white px-8 py-4 rounded-2xl font-bold box-shadow-pop text-lg border-2 border-brand-dark">
+                        Book Now - ₹ 300
+                    </a>
+                    <a href="#curriculum" class="bg-brand-teal hover:bg-cyan-400 text-brand-dark px-8 py-4 rounded-2xl font-bold box-shadow-pop text-lg border-2 border-brand-dark">
+                        See Activities
+                    </a>
+                </div>
+            </div>
+            
+            <div class="md:w-1/2 relative flex justify-center">
+                <!-- Main Image Replaced with Illustration vibe or just the main photo styled heavily -->
+                 <div class="relative w-full max-w-md">
+                    <div class="absolute top-0 -left-4 w-full h-full bg-brand-yellow rounded-[2rem] border-4 border-brand-dark transform -rotate-3"></div>
+                    <div class="absolute top-0 -right-4 w-full h-full bg-brand-purple rounded-[2rem] border-4 border-brand-dark transform rotate-3"></div>
+                    <img src="https://images.unsplash.com/photo-1535581652167-3d6b98c36cdb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Happy Kids" class="relative rounded-[2rem] border-4 border-brand-dark shadow-2xl w-full object-cover h-80 z-10">
+                    
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-10 right-0 md:-right-10 bg-white p-4 rounded-full border-4 border-brand-red shadow-xl z-20 flex flex-col items-center justify-center w-32 h-32 transform hover:rotate-12 transition">
+                        <p class="text-xs text-gray-500 font-bold uppercase">Ages</p>
+                        <p class="fun-font text-3xl font-bold text-brand-red">8-15</p>
+                        <p class="text-xs text-gray-500 font-bold uppercase">Years</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Info Bar (Lego Block Style) -->
+    <section class="container mx-auto px-4 -mt-6 relative z-20 mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-brand-purple text-white p-6 rounded-2xl border-b-8 border-purple-900 shadow-xl flex items-center gap-4 transform hover:-translate-y-1 transition">
+                <i class="fa-regular fa-calendar-check text-4xl text-brand-yellow"></i>
+                <div>
+                    <h3 class="text-2xl font-bold">Jan 2-4</h3>
+                    <p class="font-medium opacity-90">2026</p>
+                </div>
+            </div>
+            <div class="bg-brand-blue text-white p-6 rounded-2xl border-b-8 border-blue-800 shadow-xl flex items-center gap-4 transform hover:-translate-y-1 transition">
+                <i class="fa-regular fa-clock text-4xl text-brand-teal"></i>
+                <div>
+                    <h3 class="text-2xl font-bold">10AM - 12PM</h3>
+                    <p class="font-medium opacity-90">Morning Fun</p>
+                </div>
+            </div>
+            <div class="bg-brand-red text-white p-6 rounded-2xl border-b-8 border-red-800 shadow-xl flex items-center gap-4 transform hover:-translate-y-1 transition">
+                <i class="fa-solid fa-ticket text-4xl text-brand-yellow"></i>
+                <div>
+                    <h3 class="text-2xl font-bold">₹ 300 Only</h3>
+                    <p class="font-medium opacity-90">Total Fee</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Inside Section -->
+    <section id="curriculum" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 relative">
+                 <div class="inline-block px-4 py-1 rounded-full bg-brand-yellow text-brand-dark font-bold mb-2 border-2 border-brand-dark">Curriculum</div>
+                <h2 class="text-4xl md:text-5xl font-bold text-brand-dark text-shadow">What Will We Do?</h2>
+                <p class="text-xl text-gray-600 mt-4 font-medium max-w-2xl mx-auto">No boring lectures! Just games, acting, and making noise!</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-6 rounded-3xl border-4 border-brand-orange box-shadow-pop card-pop">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center text-brand-orange text-2xl mb-4 border-2 border-brand-orange">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brand-dark mb-2">Improvisation</h3>
+                    <p class="text-gray-600 font-medium">Making up fun stories on the spot!</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-6 rounded-3xl border-4 border-brand-purple box-shadow-pop card-pop">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center text-brand-purple text-2xl mb-4 border-2 border-brand-purple">
+                        <i class="fa-solid fa-face-laugh-beam"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brand-dark mb-2">Expressions</h3>
+                    <p class="text-gray-600 font-medium">Making silly, happy, and angry faces.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-6 rounded-3xl border-4 border-brand-yellow box-shadow-pop card-pop">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-600 text-2xl mb-4 border-2 border-brand-yellow">
+                        <i class="fa-solid fa-microphone-lines"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brand-dark mb-2">Voice & Speech</h3>
+                    <p class="text-gray-600 font-medium">Speaking loud and clear like a hero.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white p-6 rounded-3xl border-4 border-brand-teal box-shadow-pop card-pop">
+                    <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center text-brand-teal text-2xl mb-4 border-2 border-brand-teal">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brand-dark mb-2">Confidence</h3>
+                    <p class="text-gray-600 font-medium">Saying "Goodbye" to stage fright!</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white p-6 rounded-3xl border-4 border-brand-red box-shadow-pop card-pop">
+                    <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center text-brand-red text-2xl mb-4 border-2 border-brand-red">
+                        <i class="fa-solid fa-shapes"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brand-dark mb-2">Fun Games</h3>
+                    <p class="text-gray-600 font-medium">Team games that get everyone moving.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white p-6 rounded-3xl border-4 border-brand-blue box-shadow-pop card-pop">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-brand-blue text-2xl mb-4 border-2 border-brand-blue">
+                        <i class="fa-solid fa-users-viewfinder"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brand-dark mb-2">Performance</h3>
+                    <p class="text-gray-600 font-medium">Create a short play together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructor Section (Photo Removed, Centered) -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-[3rem] p-10 md:p-16 shadow-2xl border-8 border-brand-yellow text-center max-w-4xl mx-auto relative overflow-hidden">
+                <!-- Decorative background elements -->
+                <div class="absolute top-0 left-0 w-32 h-32 bg-brand-purple rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
+                <div class="absolute bottom-0 right-0 w-32 h-32 bg-brand-teal rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
+
+                <div class="relative z-10">
+                    <div class="w-24 h-24 bg-brand-dark text-white rounded-full flex items-center justify-center text-4xl mx-auto mb-6 shadow-lg border-4 border-brand-red">
+                        <i class="fa-solid fa-user-astronaut"></i>
+                    </div>
+                    <h2 class="text-3xl md:text-5xl font-bold text-brand-dark mb-2">Meet The Instructor</h2>
+                    <h3 class="text-2xl text-brand-purple font-bold mb-6 font-heading">Aman Kataria</h3>
+                    
+                    <p class="text-xl text-gray-700 leading-relaxed mb-8 font-medium">
+                        "Theatre is about play!" <br>
+                        Aman brings energy, expertise, and a whole lot of fun to the floor. With a passion for nurturing young talent, he guides students through the magic of theatre with patience and joy.
+                    </p>
+                    
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span class="px-5 py-2 bg-gray-100 text-gray-800 rounded-full text-base font-bold border-2 border-gray-200">🎭 Acting Coach</span>
+                        <span class="px-5 py-2 bg-gray-100 text-gray-800 rounded-full text-base font-bold border-2 border-gray-200">🎤 Voice Expert</span>
+                        <span class="px-5 py-2 bg-gray-100 text-gray-800 rounded-full text-base font-bold border-2 border-gray-200">✨ Creative Mentor</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue Section (Map Removed, Centered) -->
+    <section id="venue" class="py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-brand-dark mb-10 text-shadow">Where is the Fun?</h2>
+            
+            <div class="bg-brand-dark text-white p-10 md:p-14 rounded-[3rem] shadow-2xl max-w-3xl mx-auto border-b-8 border-gray-800 relative">
+                <!-- Decorative stars -->
+                <i class="fa-solid fa-star text-brand-yellow absolute top-8 left-8 text-2xl animate-pulse"></i>
+                <i class="fa-solid fa-star text-brand-teal absolute bottom-8 right-8 text-3xl animate-pulse"></i>
+
+                <h3 class="text-3xl font-bold text-brand-yellow mb-8 font-heading">Raksham Yogshala</h3>
+                
+                <div class="grid md:grid-cols-2 gap-8 text-left max-w-2xl mx-auto">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 text-brand-teal text-xl border-2 border-brand-teal">
+                            <i class="fa-solid fa-map-pin"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-xl mb-1 text-brand-teal">The Studio</p>
+                            <p class="text-gray-300 font-medium text-lg">5- A-2, Mahaveer Nagar ext.<br>Opp. Lakshya Library, Kota</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 text-brand-orange text-xl border-2 border-brand-orange">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-xl mb-1 text-brand-orange">Call Us</p>
+                            <p class="text-gray-300 font-medium text-lg">+91 9079805083</p>
+                            <p class="text-gray-300 font-medium text-lg">+91 8949590683</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-10">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Raksham+Yogshala+Kota+Mahaveer+Nagar" target="_blank" class="inline-block bg-white hover:bg-gray-100 text-brand-dark px-10 py-4 rounded-full font-bold transition transform hover:scale-105 border-4 border-brand-teal shadow-lg">
+                        <i class="fa-solid fa-location-arrow mr-2 text-brand-red"></i> Get Directions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white pt-16 pb-8 border-t-8 border-brand-blue">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-brand-dark mb-4 fun-font">Ready to Shine?</h2>
+            <p class="text-gray-500 mb-10 text-xl font-medium">Limited spots. Unlimited fun.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-6 mb-12">
+                 <a href="https://wa.me/919079805083?text=Hello! I'd like to register for the Kids Theatre Workshop." class="bg-green-500 hover:bg-green-600 text-white px-10 py-4 rounded-2xl font-bold shadow-xl transition transform hover:scale-105 flex items-center justify-center gap-3 border-b-4 border-green-700 text-lg">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i> Chat on WhatsApp
+                </a>
+                <a href="tel:+919079805083" class="bg-gray-100 hover:bg-gray-200 text-gray-800 px-10 py-4 rounded-2xl font-bold transition flex items-center justify-center gap-3 border-b-4 border-gray-300 text-lg">
+                    <i class="fa-solid fa-phone"></i> Call Now
+                </a>
+            </div>
+
+            <div class="text-gray-400 font-medium text-sm">
+                <p>&copy; 2026 Kids Theatre Workshop. Made with 💛 for Kids.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
